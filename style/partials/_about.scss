@@ -1,0 +1,37 @@
+// About
+.about{
+    margin-bottom: 10rem;
+
+    & > img{
+        // background-image: url('/images/about.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 60vh;
+        background-color: #ccc;
+        // display: grid;
+    }
+
+    &__content{
+        background: rgba(var(--white-rgb), var(--opaque));
+        opacity: .8;
+        margin-top: -40vh;
+        width: calc(100% - 480px);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        padding: 3rem 5rem;
+        box-shadow: 0 3px 6px rgba(var(--black-rgb), var(--shadow-opacity));
+
+        h1{
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+
+        p{
+            font-size: 1.8rem;
+            line-height: 1.7;
+        }
+    }
+}

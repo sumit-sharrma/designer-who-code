@@ -1,0 +1,63 @@
+// Layout
+body{
+    background-color: var(--body-background);
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    &__logo{
+        grid-column: 2/4;
+    }
+
+    nav{
+        grid-column: 6/7;
+        align-self: center;
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// Hero
+.hero{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+
+    &__photo{
+        grid-column: 2/4;
+    }
+
+    &__intro{
+        grid-column: 4/7;
+    }
+}
+
+// Playground
+.playground{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    &__block{
+        grid-column: 2 / 7;
+    }
+}
+
+// Contact
+.contact{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    &__content{
+        grid-column: 2/-1;
+    }
+}

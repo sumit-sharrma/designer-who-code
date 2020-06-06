@@ -1,0 +1,43 @@
+// Typography
+
+$serif: 'IBM Plex Serif', serif;
+$sans-serif: 'Poppins', sans-serif;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+h1{
+    font-size: clamp(1.2rem, 5vw, 3.2rem);
+    font-family: $serif;
+    color: var(--text-dark);
+}
+
+h2{
+    font-size: 28px;
+    font-family: $serif;
+    color: var(--text-dark);
+}
+
+h3{
+    font-size: 24px;
+    font-family: $sans-serif;
+    color: var(--text-dark);
+}
+
+h4{
+    font-size: 20px;
+    font-family: $sans-serif;
+    color: var(--text-dark);
+}
+
+p{
+    font-size: 16px;
+    font-family: $sans-serif;
+    font-weight: $font-normal;
+}
+
+a,
+span,{
+    font-family: $sans-serif;
+}

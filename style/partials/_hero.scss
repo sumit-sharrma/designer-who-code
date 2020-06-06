@@ -1,0 +1,63 @@
+.hero{
+    padding: 18rem 0;
+
+    &__photo{
+
+        span{
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            background-color: #fdcaca;
+            border-radius: 50%;
+        }
+    }
+
+    &__intro{
+        padding-left: 30px;
+
+        h1{
+            margin-bottom: 1.4em;
+            font-weight: $font-medium;
+        }
+
+        &__highlight{
+            color: var(--primary);
+        }
+
+        h4{
+            margin-bottom: 2em;
+            position: relative;
+            padding-left: 30px;
+            font-weight: $font-normal;
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 20px;
+                height: 2px;
+                background-color: var(--black);
+                border-radius: 1px;
+                top: 50%;
+            }
+        }
+    }
+
+    &__social{
+        display: flex;
+        a{
+            display: flex;
+            width: 40px;
+            height: 40px;
+            background-color: var(--white);
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 1px 1px rgba(var(--black-rgb), var(--shadow-opacity));
+
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+        }
+    }
+}

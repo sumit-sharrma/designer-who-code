@@ -1,0 +1,50 @@
+.card{
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(var(--black-rgb), .16);
+        transition: all .3s ease;
+
+        &:hover{
+            transform: translate(0, -5px);
+            box-shadow: 0 8px 15px rgba(var(--black-rgb), .16);
+        }
+    }
+
+    &__content{
+        padding: 2.4em;
+        cursor: pointer;
+        flex: 1;
+
+        h4{
+            margin-bottom: 8px;
+            font-weight: $font-semi-bold;
+        }
+
+        p{
+            color: var(--text-dark-grey);
+            margin-bottom: 24px;
+        }
+
+        &__footer{
+            font-size: 1.4rem;
+            color: var(--text-dark-grey);
+            background-color: transparent;
+            font-weight: $font-medium;
+        }
+    }
+
+    &__photo{
+        width: 180px;
+        background-color: #ccc;
+    }
+}
