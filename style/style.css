@@ -18,7 +18,8 @@ html {
   --shadow-opacity: .16;
   --opaque: 1;
   --text-dark: #2B2B2B;
-  --text-dark-grey: #C7C7C7;
+  --text-light-grey: #C7C7C7;
+  --text-medium-grey: #707070;
 }
 
 h1 {
@@ -143,6 +144,25 @@ body {
   grid-column: 2/-1;
 }
 
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.about__img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.about__content {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
+}
+
 .header {
   padding: 2.4em 0;
   background-color: var(--white);
@@ -167,13 +187,19 @@ body {
 .nav li a {
   text-decoration: none;
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
   text-transform: none;
   font-weight: 500;
+  color: var(--text-medium-grey);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav li a:hover {
+  color: var(--primary);
 }
 
 .hero {
-  padding: 18rem 0;
+  padding: 18vh 0;
 }
 
 .hero__photo span {
@@ -321,13 +347,13 @@ body {
 }
 
 .card__content p {
-  color: var(--text-dark-grey);
+  color: var(--text-light-grey);
   margin-bottom: 24px;
 }
 
 .card__content__footer {
   font-size: 1.4rem;
-  color: var(--text-dark-grey);
+  color: var(--text-light-grey);
   background-color: transparent;
   font-weight: 500;
 }
@@ -338,39 +364,39 @@ body {
 }
 
 .about {
-  margin-bottom: 10rem;
+  padding: 16vh 0;
 }
 
-.about > img {
+.about__img img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  max-width: 100%;
+  width: 25vw;
   height: 60vh;
-  background-color: #ccc;
+  border-radius: 8px;
 }
 
 .about__content {
-  background: rgba(var(--white-rgb), var(--opaque));
-  opacity: .8;
-  margin-top: -40vh;
-  width: calc(100% - 480px);
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 8px;
-  padding: 3rem 5rem;
-  -webkit-box-shadow: 0 3px 6px rgba(var(--black-rgb), var(--shadow-opacity));
-          box-shadow: 0 3px 6px rgba(var(--black-rgb), var(--shadow-opacity));
+  padding: 3em 0 0 5em;
 }
 
 .about__content h1 {
-  text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .about__content p {
-  font-size: 1.8rem;
   line-height: 1.7;
+}
+
+.about__content p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.about__content--link {
+  text-decoration: none;
+  color: var(--primary);
 }
 
 .contact {
@@ -383,7 +409,7 @@ body {
 
 .contact__content p {
   margin-bottom: 20px;
-  color: var(--text-dark-grey);
+  color: var(--text-light-grey);
 }
 
 .contact__social {

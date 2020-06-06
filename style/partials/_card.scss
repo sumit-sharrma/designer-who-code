@@ -31,13 +31,13 @@
         }
 
         p{
-            color: var(--text-dark-grey);
+            color: var(--text-light-grey);
             margin-bottom: 24px;
         }
 
         &__footer{
             font-size: 1.4rem;
-            color: var(--text-dark-grey);
+            color: var(--text-light-grey);
             background-color: transparent;
             font-weight: $font-medium;
         }

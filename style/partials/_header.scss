@@ -22,9 +22,14 @@
         a{
             text-decoration: none;
             font-size: 1.6rem;
-            font-family: $sans-serif;
             text-transform: none;
             font-weight: $font-medium;
+            color: var(--text-medium-grey);
+            transition: all .3s ease;
+
+            &:hover{
+                color: var(--primary);
+            }
         }
     }
 }

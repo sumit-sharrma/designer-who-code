@@ -61,3 +61,17 @@ body{
         grid-column: 2/-1;
     }
 }
+
+// About
+.about{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    &__img{
+        grid-column: 2/4;
+    }
+
+    &__content{
+        grid-column: 4/7;
+    }
+}
