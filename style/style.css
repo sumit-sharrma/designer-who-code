@@ -466,6 +466,7 @@ footer {
 
 .project {
   padding: 0;
+  padding-bottom: 130px;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -555,6 +556,14 @@ footer {
   padding-left: 28px;
 }
 
+.list__visual {
+  margin-top: 2em;
+}
+
+.list__visual li:not(:last-child) {
+  margin-bottom: 6em;
+}
+
 .list label {
   font-size: 1.6rem;
   font-weight: 700;
@@ -579,6 +588,8 @@ footer {
 
 .image__grid li {
   list-style-type: none;
-  width: 49.5%;
+  -webkit-box-flex: 49%;
+      -ms-flex: 49%;
+          flex: 49%;
 }
 /*# sourceMappingURL=style.css.map */

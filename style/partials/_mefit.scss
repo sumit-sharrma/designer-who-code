@@ -1,5 +1,6 @@
 .project{
     padding: 0;
+    padding-bottom: 130px;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -89,6 +90,15 @@
         padding-left: 28px;
     }
 
+    &__visual{
+        margin-top: 2em;
+        li{
+            &:not(:last-child){
+                margin-bottom: 6em;
+            }
+        }
+    }
+
     label{
         font-size: 1.6rem;
         font-weight: 700;
@@ -107,9 +117,9 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 4em;
-    
+
     li{
         list-style-type: none;
-        width: 49.5%;
+        flex: 49%;
     }
 }
