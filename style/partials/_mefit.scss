@@ -1,3 +1,11 @@
+.text{
+
+    &__center{
+        text-align: center;
+    }
+    
+}
+
 .project{
     padding: 0;
     padding-bottom: 130px;
@@ -15,7 +23,7 @@
     }
 
     &__hero{
-        grid-column: 1 / -1;
+        grid-column: 2 / 5;
         padding: 0 0 4em;
     }
 
@@ -77,6 +85,10 @@
     &__inline-image{
         margin-bottom: 4em;
     }
+
+    a{
+        color: var(--primary);
+    }
 }
 
 .list{
@@ -115,15 +127,49 @@
     margin: 1.5em 0;
 }
 
-.image__grid{
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 4em;
+.image{
 
-    li{
-        list-style-type: none;
-        flex: 49%;
+    &__grid{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 4em;
+
+        li{
+            list-style-type: none;
+            flex: 49%;
+        }
     }
+
+    &__half{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.margin{
+
+    &__user{
+        margin: 1.5em 0 3.2em;
+    }
+
+    &__baggage{
+        margin-bottom: 3.2em;
+    }
+
+    &__quote{
+        q{
+            display: block;
+            margin-bottom: 2em;
+        }
+    }
+
+    &__gist-bottom{
+        margin-bottom: 3em;
+    }
+}
+
+.gist{
+    max-width: 980px;
 }

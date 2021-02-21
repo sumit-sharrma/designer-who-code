@@ -11,7 +11,7 @@ html {
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
 }
 
@@ -350,7 +350,7 @@ body {
           box-shadow: 0 3px 6px rgba(var(--black-rgb), 0.16);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  height: 470px;
+  height: 540px;
   position: relative;
 }
 
@@ -465,6 +465,10 @@ footer {
   padding: 16px 0;
 }
 
+.text__center {
+  text-align: center;
+}
+
 .project {
   padding: 0;
   padding-bottom: 130px;
@@ -487,7 +491,9 @@ footer {
 }
 
 .project__hero {
-  grid-column: 1 / -1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
   padding: 0 0 4em;
 }
 
@@ -549,6 +555,10 @@ footer {
   margin-bottom: 4em;
 }
 
+.project a {
+  color: var(--primary);
+}
+
 .list__block {
   margin-bottom: 4.5em;
 }
@@ -598,5 +608,31 @@ footer {
   -webkit-box-flex: 49%;
       -ms-flex: 49%;
           flex: 49%;
+}
+
+.image__half {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.margin__user {
+  margin: 1.5em 0 3.2em;
+}
+
+.margin__baggage {
+  margin-bottom: 3.2em;
+}
+
+.margin__quote q {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.margin__gist-bottom {
+  margin-bottom: 3em;
+}
+
+.gist {
+  max-width: 980px;
 }
 /*# sourceMappingURL=style.css.map */
