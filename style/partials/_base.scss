@@ -23,7 +23,7 @@ body{
 
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 
@@ -45,20 +45,20 @@ body{
 // Playground
 .playground{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
 
     &__block{
-        grid-column: 2 / 7;
+        grid-column: 3 / 8;
     }
 }
 
 // Contact
 .contact{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
 
     &__content{
-        grid-column: 2/-1;
+        grid-column: 3 / 8;
     }
 }
 

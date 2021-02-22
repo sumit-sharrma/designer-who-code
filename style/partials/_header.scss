@@ -19,6 +19,11 @@
     list-style-type: none;
 
     li{
+
+        &:not(:last-child){
+            margin-right: 4em;
+        }
+        
         a{
             text-decoration: none;
             font-size: 1.6rem;

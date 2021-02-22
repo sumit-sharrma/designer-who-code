@@ -33,4 +33,51 @@
             }
         }
     }
+
+    &__css__card{
+        padding-left: 0;
+        display: column;
+        columns: 2;
+        gap: 1.5em;
+        li{
+            background-color: var(--white);
+            list-style: none;
+            border-radius: 10px;
+            overflow: hidden;
+            // width: calc(100% - 51%);
+            border: 1px solid #e9e9e9;
+            padding-bottom: 20px;
+            margin-bottom: 1.5em;
+
+            a{
+                padding: 30px 20px 10px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-decoration: none;
+                flex: 1;
+
+                label{
+                    display: block;
+                    font-size: 2rem;
+                    font-weight: $font-bold;
+                    color: var(--text-dark);
+                    cursor: pointer;
+                    margin-bottom: 4px;
+                }
+
+                span{
+                    font-size: 1.4rem;
+                    display: inline-block;
+                    color: var(--text-medium-grey);
+                }
+            }
+
+            img{
+                // width: 190px;
+                // border-radius: 10px;
+            }
+        }
+    }
 }
