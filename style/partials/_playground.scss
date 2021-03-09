@@ -39,6 +39,10 @@
         display: column;
         columns: 2;
         gap: 1.5em;
+
+        & > *{
+            break-inside: avoid;
+        }
         li{
             background-color: var(--white);
             list-style: none;

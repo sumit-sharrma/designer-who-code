@@ -337,6 +337,11 @@ body {
   gap: 1.5em;
 }
 
+.playground__css__card > * {
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+}
+
 .playground__css__card li {
   background-color: var(--white);
   list-style: none;
