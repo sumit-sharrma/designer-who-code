@@ -2,7 +2,7 @@
     @return red($hex), green($hex), blue($hex);
 }
 
-$primary: #898DF8;
+$primary: #F6953C;
 
 :root{
     --primary: #{$primary};
@@ -16,8 +16,14 @@ $primary: #898DF8;
 
     // Text styles
     --text-dark: #2B2B2B;
-    --text-light-grey: #C7C7C7;
+    --col-454545: #635c5c;
+    --col-171717: #171717;
+    --col-2B3876: #2B3876;
+    --col-E2E6EB: #E2E6EB;
+    --col-F9F5F4: #F9F5F4;
+    --text-light-grey: #5C5C5C;
     --text-medium-grey: #707070;
     --col-f0f1ff: #f0f1ff;
+    --col-25D366: #25D366;
     --primary-rgb: #{hexToRGB($primary)};
 }

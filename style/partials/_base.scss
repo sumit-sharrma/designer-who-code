@@ -3,20 +3,26 @@ body{
     background-color: var(--body-background);
 }
 
+.body{
+    &__bg{
+        background: linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%);
+    }
+}
+
 .header{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(12,1fr);
     align-content: center;
     position: sticky;
     top: 0;
     z-index: 1;
 
     &__logo{
-        grid-column: 2/4;
+        grid-column: 3/5;
     }
 
     nav{
-        grid-column: 6/7;
+        grid-column: 9/11;
         align-self: center;
     }
 }
@@ -45,10 +51,10 @@ body{
 // Playground
 .playground{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 
     &__block{
-        grid-column: 3 / 8;
+        grid-column: 3 / 11;
     }
 }
 

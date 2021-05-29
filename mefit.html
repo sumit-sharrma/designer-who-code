@@ -1,50 +1,68 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Sumit Sharma</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="header">
-            <a href="/" class="header__logo">Sumit Sharma</a>
+        <header class="header header__shadow">
+            <a href="/" class="header__logo">
+                <span class="header__logo--letter">S</span>
+                <span class="header__logo--word">umit <br>Sharma</span>
+            </a>
             <nav>
                 <ul class="nav">
                     <li>
-                        <a href="/">Work</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/">Resume</a>
+                        <a href="resume.html">Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <section class="project">
+        <section class="project project__mefit">
             <div class="project__head">
+                <label class="project__head--label">meFit</label>
                 <h1>meFit: A Product design journey</h1>
+                <div class="project__details">
+                    <ul class="project__details__list">
+                        <li>
+                            <label>Client</label>
+                            <p>Practice work</p>
+                        </li>
+                        <li>
+                            <label>My role</label>
+                            <p>Research, competitive analysis, sketching, visual design</p>
+                        </li>
+                        <li>
+                            <label>Platform</label>
+                            <p>Mobile application</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="project__view">
+                        <span>View project </span>
+                        <img src="./images/icon-new-tab.svg" alt="">
+                    </a>
+                </div>
             </div>
             <div class="project__hero">
                 <img loading="lazy" src="./images/banner-white.jpg" alt="">
             </div>
 
             <div class="project__content">
-                <h2>Project overview</h2>
+                <h3>Project overview</h3>
                 <p>With the internet and social media, we now have access to so much information, which sometimes leads to distractions and herd goals. We all want to try that cheese dripping pizza from that Instagram #foodporn post and still maintain that #fitspiration physique! We want to join that #5AMClub (this some!) and #party all night with friends!</p>
                 <p>All of us want to become healthy and fit but we either do not get enough time or we lack the motivation to achieve this desire of ours.</p>
                 <p>In this project, we explored how users lifestyle is affecting their fitness levels and how can we improve that.</p>
@@ -54,27 +72,31 @@
                     <p>Not-so-fun fact : In 2016, around 13% of the world’s adult population were obese. And now, at the end of 2019 this has increased to 30% and counting.</p>
                 </blockquote>
 
-                <h2>Role</h2>
+                <!-- <h2>Role</h2>
                 <ul class="list__block">
                     <li>Product design, user research(Quantitative)</li>
                     <li>Divided into team of 5 that included people of different backgrounds like finance, engineering & management</li>
                     <li>Duration: 7 sessions (~5 hours each on weekends)</li>
-                </ul>
+                </ul> -->
 
-                <h2>Process</h2>
+                <!-- <h3>Process</h3>
                 <div>
                     <img loading="lazy" src="./images/process.jpg" alt="">
+                </div> -->
+
+                <div class="project__content__question">
+                    <h4>Design question</h4>
+                    <p>How to help young professionals and students stay healthy while making their lifestyle better!</p>
                 </div>
 
-                <h2>The challenge</h2>
-                <p>The fitness experience in today’s available solutions lacks a combination of motivation -> goal setting -> competing -> tracking</p>
-                <p>Most of the solutions today either track your steps or train you for muscle builds or only make you aware of the diet plans that are available.</p>
+                <!-- <p>The fitness experience in today’s available solutions lacks a combination of motivation -> goal setting -> competing -> tracking</p> -->
+                <!-- <p>Most of the solutions today either track your steps or train you for muscle builds or only make you aware of the diet plans that are available.</p> -->
 
-                <h2>The solution</h2>
+                <!-- <h2>The solution</h2>
                 <p>With meFit, we are aiming at combining all to provide a better experience to the user.</p>
-                <p>For your fitness journey, you need self-regulated learning activities like setting goals, goal oriented diet plans and reviewing your day-to-day progress.</p>
+                <p>For your fitness journey, you need self-regulated learning activities like setting goals, goal oriented diet plans and reviewing your day-to-day progress.</p> -->
 
-                <h2>Discover</h2>
+               
                 <h3>Assumptions</h3>
                 <p>We looked up on web and talked to people to get more knowledge about the fitness industry and what people are currently doing to be fit. The finding are listed below:</p>
                 <ul class="list__block">
@@ -172,9 +194,8 @@
                     <img loading="lazy" src="./images/Converge-diverge.jpg" alt="">
                 </div>
 
-                <h2>Define</h2>
-                <h3>Problem Statement</h3>
-                <blockquote class="blockquote__margin">“How to help young professionals and students stay healthy while making their lifestyle better!”</blockquote>
+                <!-- <h3>Problem Statement</h3> -->
+                <!-- <blockquote class="blockquote__margin">“How to help young professionals and students stay healthy while making their lifestyle better!”</blockquote> -->
                 <p>The research found that to take care of your body as a whole is very much tedious, stressful and lack one-stop solution. So how can we help enhance this experience with lifestyle, the thing that is already built in their behavior? We listed some use cases for the same:</p>
 
                 <div class="list">
@@ -238,7 +259,7 @@
                 </div>
                 
 
-                <h2>Design</h2>
+                <!-- <h2>Design</h2> -->
                 <h3>Wireframing</h3>
                 <ul class="image__grid">
                     <li><img loading="lazy" src="./images/wireframes/1.jpg" alt=""></li>
@@ -304,7 +325,7 @@
                     </li>
                 </ol>
 
-                <h2>Reflection</h2>
+                <h3>Reflection</h3>
                 <p>The intended scope versus the real project scope: importance to have a focal point to start.</p>
                 <p>Think big, but start small and focused, and expand the use cases based on the track. It will enable more efficient project management as well as more scalable design solutions. The initiation for this project is to explore design opportunities for an effective digital health product, but this intended scope is obviously too big to be executable.</p>
                 <p>When we started mental + physical health was our focus. But, down the line it was not possible to do justice to both.</p>

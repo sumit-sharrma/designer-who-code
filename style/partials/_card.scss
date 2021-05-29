@@ -29,18 +29,20 @@
 
     &__content{
         position: absolute;
-        bottom: 0;
-        padding: 50px 40px;
+        top: 50%;
+        right: 60px;
+        transform: translateY(-50%);
+        width: 290px;
 
-        h4{
-            margin-bottom: 8px;
+        h3{
+            margin-bottom: 12px;
             font-weight: $font-semi-bold;
-            color: var(--white);
+            color: var(--text-dark);
         }
 
         p{
             color: var(--text-light-grey);
-            margin-bottom: 24px;
+            margin-bottom: 12px;
         }
 
         span{

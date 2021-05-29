@@ -7,73 +7,91 @@
         <title>Sumit Sharma</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         
-        <header class="header">
-            <a href="/" class="header__logo">Sumit Sharma</a>
+        <header class="header header__shadow">
+            <a href="/" class="header__logo">
+                <span class="header__logo--letter">S</span>
+                <span class="header__logo--word">umit <br>Sharma</span>
+            </a>
             <nav>
                 <ul class="nav">
                     <li>
-                        <a href="/">Work</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/">Resume</a>
+                        <a href="resume.html">Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <section class="project">
+        <section class="project project__trackbag">
             <div class="project__head">
-                <h1>Case study: Airline baggage tracking</h1>
+                <label class="project__head--label">Trackbag</label>
+                <h1>Trackbag is a mobile app that helps users to track their luggage in the whole airline journey from arrival to departure.</h1>
+                <div class="project__details">
+                    <ul class="project__details__list">
+                        <li>
+                            <label>Client</label>
+                            <p>Practice work</p>
+                        </li>
+                        <li>
+                            <label>My role</label>
+                            <p>Research, competitive analysis, sketching, visual design</p>
+                        </li>
+                        <li>
+                            <label>Platform</label>
+                            <p>Mobile application</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="project__view">
+                        <span>View project </span>
+                        <img src="./images/icon-new-tab.svg" alt="">
+                    </a>
+                </div>
             </div>
             <div class="project__hero">
-                <img loading="lazy" src="./images/track-bag-hero.png" alt="TrackBag: a baggage tracking case study">
+                <img loading="lazy" src="./images/trackbag-hero.svg" alt="TrackBag: a baggage tracking case study">
             </div>
 
             <div class="project__content">
-                <h2>Project overview</h2>
+                <h3>Project overview</h3>
                 <p>Airports and luggage, we all know that they have a sour relationship. Accidental pick-ups, ripped off tags, delays, mishandling by the airlines or worse theft. It's so common these days that there is an <a target="_blank" href="https://www.paisabazaar.com/commercial-insurance/baggage-insurance/">insurance industry around this.</a></p>
                 <p>I decided to take up this  redesign project and explore the solutions.</p>
-                
-                <h2>Role</h2>
-                <ul class="list__block">
-                    <li>Product design, user research</li>
-                    <li>Duration: 2 weeks (~2 hours everyday)</li>
-                </ul>
 
-                <h2>Problem Statement/Challenge</h2>
-                <blockquote class="blockquote__margin">
+                <div class="project__content__question">
+                    <h4>design question</h4>
                     <p>A traveler has landed at New Delhi airport and needs to find her checked bag.</p>
-                </blockquote>
-
-                <p>The major problems and needs are listed as follows:</p>
-                <ul class="list__block">
-                    <li>Users end up spending too much time in the conveyor belt, especially in things such as standing in checkout lines and finding their baggage.</li>
-                    <li>Users don't know the whereabouts of their luggage</li>
-                    <li>Increase in the theft cases of luggage</li>
-                    <li>Luggage going to unknown locations</li>
-                    <li>How can a user find the directions for his/her luggage? (From deboarding to conveyor belt)</li>
-                </ul>
-
-                <h2>Discovering the problem</h2>
-                <p>I analyzed the current structure and gathered usage and engagement data from the current experience. I collected many successful and unsuccessful examples of this experience from social platforms to understand the problem/flow correctly.</p>
-
-                <h3>User journey</h3>
-                <div class="margin__user">
-                    <img loading="lazy" src="./images/user-journey.svg" alt="User journey of a typical traveler">
+                </div>
+                
+               
+                <h3>Pre-research</h3>
+                <p>I mapped out an end-to end user journey of a typical user to visualize areas where pain-points might arise (highlighted in red).</p>
+                <div class="list">
+                    <p>The major problems and needs are listed as follows:</p>
+                    <ul class="list__block">
+                        <li>Users end up spending too much time in the conveyor belt, especially in things such as standing in checkout lines and finding their baggage.</li>
+                        <li>Users don't know the whereabouts of their luggage</li>
+                        <li>Increase in the theft cases of luggage</li>
+                        <li>Luggage going to unknown locations</li>
+                        <li>How can a user find the directions for his/her luggage? (From deboarding to conveyor belt)</li>
+                    </ul>
                 </div>
 
+                <div>
+                    <img loading="lazy" src="./images/user-journey-issues.png" alt="Pain points of a user in a flight journey">
+                </div>
+
+                <h3>Research</h3>
+                <p>To understand the problem scope more clearly, I started with getting familiar with the current process.</p>
+                
                 <div class="list">
-                    <label>Current baggage Process</label>
+                    <h5>Current baggage Process:</h5>
                     <ul class="list__block">
                         <li>The operator registers luggage with the passenger name, finds the whole travel itinerary, and prints one or more tags to attach to each suitcase.</li>
                         <li>The tag is a label that includes all the information related to the flight, also the final destination, and any other foreseen stopover, together with a 10-digit barcode, unique for each suitcase.</li>
@@ -82,14 +100,17 @@
                     </ul>
                 </div>
 
-                <h2 class="margin__quote text__center"><q>The current system of barcode scanning does not provide the user to track every whereabouts of their baggage.</q></h2>
-
+                <h3>Research Insights</h3>
+                <p>The current system of barcode scanning does not provide the user to track every whereabouts of their baggage.</p>
+                
                 <div class="list">
-                    <label>Problems with barcode scanning:</label>
+                    <h5>Problems with barcode scanning:</h5>
                     <ul class="list__block">
                         <li>Theft at baggage claim (anybody can pick any bag)</li>
-                        <li>Indefinite waiting time at the conveyor belt</li>
-                        <li>No tracking of baggage (when it will arrive at the conveyor belt)</li>
+                        <li>Manual scanning required of each item</li>
+                        <li>Only one item can be scanned at a time.</li>
+                        <li>Wear and tear of label effect the scanning ability.</li>
+                        <li>No tracking of baggage (when it will arrive at the conveyor belt).</li>
                         <li>No check at exit, whether the users have his own luggage or not</li>
                     </ul>
                 </div>
@@ -99,40 +120,27 @@
                     <li><img src="./images/baggage-user-2.png" alt="Frustrated users at the airport"></li>
                 </ul>
 
-                <div class="list">
-                    <label>Business impact</label>
-                    <ul class="list__block">
-                        <li>Of all mishandled bags, <a href="https://www.latimes.com/business/la-xpm-2014-apr-06-la-fi-mo-lost-airline-baggage-20140404-story.html">81% are simply delayed</a></li>
-                        <li>The cost to airlines to find, deliver or replace mishandled bags was <a href="https://www.latimes.com/business/la-xpm-2014-apr-06-la-fi-mo-lost-airline-baggage-20140404-story.html">$2.09 billion in 2013.</a></li>
-                        <li>The top cause for delayed bags was when baggage handlers made errors transferring bags from one airplane to another. This accounts for 45% of mishandled bags.</li>
-                        <li>Up-to 2019, <a href="https://www.sita.aero/globalassets/docs/surveys--reports/baggage-it-insights-2020.pdf">25.4 million</a> bags were mishandled</li>
-                        <li>Huge time and resource wastage</li>
-                        <li>Reputation damage</li>
-                        <li>Unhappy customers</li>
-                    </ul>
+                
+                <h3>Business impact</h3>
+                <ul class="list__block">
+                    <li>Of all mishandled bags, <a href="https://www.latimes.com/business/la-xpm-2014-apr-06-la-fi-mo-lost-airline-baggage-20140404-story.html">81% are simply delayed</a></li>
+                    <li>The cost to airlines to find, deliver or replace mishandled bags was <a href="https://www.latimes.com/business/la-xpm-2014-apr-06-la-fi-mo-lost-airline-baggage-20140404-story.html">$2.09 billion in 2013.</a></li>
+                    <li>The top cause for delayed bags was when baggage handlers made errors transferring bags from one airplane to another. This accounts for 45% of mishandled bags.</li>
+                    <li>Up-to 2019, <a href="https://www.sita.aero/globalassets/docs/surveys--reports/baggage-it-insights-2020.pdf">25.4 million</a> bags were mishandled</li>
+                    <li>Huge time and resource wastage</li>
+                    <li>Reputation damage</li>
+                    <li>Unhappy customers</li>
+                </ul>
+
+                <h3>A Solution</h3>
+                <h5>RFID</h5>
+
+                <div class="rfid">
+                    <p><a href="https://en.wikipedia.org/wiki/Radio-frequency_identification">RFID</a> technology is expected to further improve the no-read tag rate in the future. RFID tags can be embedded in bag tags and track luggage in real-time. With RFID readers reading tags via radio waves, hidden or unreadable tags do not present a problem, leading to fewer mishandled bags.</p>
+                    <p>Using the tech, the <a href="https://www.iata.org/">IATA</a> proposed a method to tackle this issue.</p>
                 </div>
                 
-                
-
-                <h3>User stories & KPI's</h3>
-                <blockquote class="blockquote__margin">
-                    What gets measured, gets managed - Peter Drucker
-                </blockquote>
-                <p>KPIs, are key figures that you can choose or define yourself which translate the success of a project</p>
-                <p>To make a product successful, it has to be measured in the right way. After all User experience is all about finding that soft spot between the ease of use and business.</p>
-                <p>The product would be measured on the basis of these Key Indicators-</p>
-           
-                <div class="gist">
-                    <script src="https://gist.github.com/sumit-sharrma/0477cc40fb0b1cdb765aea9ef8b6c2d6.js"></script>
-                </div>
-
-                <h2>A Solution</h2>
-                <h3>RFID</h3>
-                <p><a href="https://en.wikipedia.org/wiki/Radio-frequency_identification"><strong>RFID</strong></a> technology is expected to further improve the no-read tag rate in the future. RFID tags can be embedded in bag tags and track luggage in real-time. With RFID readers reading tags via radio waves, hidden or unreadable tags do not present a problem, leading to fewer mishandled bags.</p>
-                
-                <p><strong>Using the tech, the <a href="https://www.iata.org/">IATA</a> proposed a method to tackle this issue.</strong></p>
-                
-                <h3><a href="https://www.iata.org/en/programs/ops-infra/baggage/baggage-tracking/">Resolution 753</a></h3>
+                <h5><a href="https://www.iata.org/en/programs/ops-infra/baggage/baggage-tracking/">Resolution 753</a></h5>
                 <p>According to Resolution 753 in effect from June 2018, airlines must track baggage at four key points in the baggage journey as follows:</p>
                 <ul class="list__block">
                     <li>Passenger handover to airline</li>
@@ -145,15 +153,33 @@
                 </div>
                 <p>And airlines need to share the tracking information with their interline journey partners as needed.</p>
                 <p>The best way to exchange this information with the traveler is with the help of a mobile phone.</p>
-                <p>This could be a Standalone App that takes your <strong>booking ID</strong>, the <strong>airline</strong> with which you booked your ticket and spit out your <strong>baggage tracking details.</strong></p>
+
+                <div class="solution">
+                    <ul class="solution__list">
+                        <li>
+                            <img loading="lazy" src="./images/wire-booking-app.png" alt="">
+                            <p>The user already have an airline booking app/3rd party app, which could be used to complete this flow of information.</p>
+                        </li>
+                        <li>
+                            <img loading="lazy" src="./images/wire-booking-standalone-app.png" alt="">
+                            <p>This could be a Standalone App that takes your booking ID, the airline with which you booked your ticket and spit out your baggage tracking details.</p>
+                        </li>
+                    </ul>
+                    <div class="solution__content">
+                        <img loading="lazy" src="./images/whatsapp-integration-v1.png" alt="TrackBag integration with WhatsApp">
+                        <div class="solution__content__para">
+                            <p>The notifications could be well integrated with messaging apps like WhatsApp to push regular updates about the tracking details of the baggage as most of the users use them.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p>This could be a Standalone App that takes your <strong>booking ID</strong>, the <strong>airline</strong> with which you booked your ticket and spit out your <strong>baggage tracking details.</strong></p>
                 <p>OR</p>
                 <p>The user already have an airline booking app/3rd party app, which could be used to complete this flow of information.</p>
 
                 <blockquote class="blockquote__margin">
                     The notifications could be well integrated with messaging apps like WhatsApp to push regular updates about the tracking details of the baggage as most of the users use them.
-                </blockquote>
+                </blockquote> -->
 
-                <h2>Design</h2>
                 <h3>Wireframes/Sketches</h3>
                 <ul class="image__grid">
                     <li><img loading="lazy" src="./images/trackbag-wire-1.jpg" alt="Normal flow for baggage check-in at airport"></li>
@@ -163,7 +189,7 @@
                     <li><img loading="lazy" src="./images/wireframe-second.svg" alt="wireframing for TrackBag"></li>
                 </ul>
 
-                <h3>Visuals</h3>
+                <h5>Visuals</h5>
                 <ol class="list list__visual">
                     <li>
                         <label>Walk-through / On-boarding</label>
@@ -188,7 +214,16 @@
                     </li>
                 </ol>
 
-                <h2>Reflection</h2>
+                <h3>KPI's</h3>
+                <p>KPIs, are key figures that you can choose or define yourself which translate the success of a project</p>
+                <p>To make a product successful, it has to be measured in the right way. After all User experience is all about finding that soft spot between the ease of use and business.</p>
+                <p>The product would be measured on the basis of these Key Indicators-</p>
+           
+                <div class="gist">
+                    <script src="https://gist.github.com/sumit-sharrma/0477cc40fb0b1cdb765aea9ef8b6c2d6.js"></script>
+                </div>
+
+                <h3>Reflection</h3>
                 <p>Think big, but start small and focused, and expand the use cases based on the track. It will enable more efficient project management as well as more scalable design solutions. The initiation for this project is to explore design opportunities for an effective digital luggage tracking product, but this intended scope is obviously too big to be executable and would require involvement of multiple parties.</p>
                 <p>Sure, it's a huge investment from the business side of both the airline and the airport infra's owners but in the long run, this will pay off in huge amounts as in :</p>
 
@@ -200,10 +235,7 @@
                 </ul>
 
                 <p>It's a win-win for both the sides.</p>
-                <p>Life of the traveler could be made easier with the notification integration with a chat application like <strong>WhatsApp.</strong></p>
-                <div class="image__half">
-                    <img loading="lazy" src="./images/whatsapp-integration-v1.png" alt="TrackBag integration with WhatsApp">
-                </div>
+                
             </div>
         </section>
 
