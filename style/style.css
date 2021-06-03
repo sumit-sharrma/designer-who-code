@@ -193,6 +193,8 @@ body {
 
 .header {
   height: 90px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header__shadow {
