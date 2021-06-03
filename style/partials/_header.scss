@@ -1,8 +1,10 @@
 .header{
+    height: 90px;
 
     &__shadow{
+        transition: all .3s ease-in-out;
         background-color: var(--white);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 2px 70px rgba(0, 0, 0, .16);
     }
         
     &__logo{

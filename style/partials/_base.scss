@@ -13,9 +13,9 @@ body{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     align-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 
     &__logo{
         grid-column: 3/5;
@@ -32,6 +32,9 @@ body{
     justify-content: end;
 }
 
+.content{
+    padding-top: 14vh;
+}
 
 // Hero
 .hero{
