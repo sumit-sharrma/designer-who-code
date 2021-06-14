@@ -74,13 +74,30 @@ body{
 // About
 .about{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 
-    &__img{
-        grid-column: 2/4;
+    &__head{
+        grid-column: 2/12;
+        display: flex;
+        align-items: center;
+        padding: 5em 4em;
     }
 
-    &__content{
-        grid-column: 4/7;
+    &__body{
+        grid-column: 3/11;
+    }
+}
+
+// Footer
+.footer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__list{
+        grid-column: 3/11;
+    }
+
+    &__bottom{
+        grid-column: 3/11;
     }
 }

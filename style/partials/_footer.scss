@@ -1,7 +1,85 @@
-footer{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    background-color: #ccc;
-    padding: 16px 0;
+.footer{
+    background-color: var(--col-2B3876);
+    padding: 40px 0;
+    margin-top: 150px;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+
+        &__block{
+            label{
+                font-size: 2rem;
+                color: var(--white);
+                display: inline-block;
+                margin-bottom: 0.8em;
+                font-weight: $font-semi-bold;
+            }
+
+            &__items{
+                padding-left: 0;
+                li{
+                    font-size: 1.6rem;
+                    color: var(--col-E2E6EB);
+                    list-style-type: none;
+
+                    a{
+                        text-decoration: none;
+                        color: var(--col-E2E6EB);
+                    }
+
+                    &:not(:last-child){
+                        margin-bottom: .75em;
+                    }
+                }
+
+                &--center{
+                    li{
+                        &:last-child{
+                            font-weight: $font-semi-bold;
+                        }
+                    }
+                }
+            }
+
+            &--center{
+                text-align: center;
+                width: 240px;
+            }
+
+            &--end{
+                text-align: right;
+            }
+        }
+    }
+
+    &__bottom{
+        text-align: center;
+        margin-top: 4.5em;
+
+        p{
+            font-size: 1.4rem;
+            color: var(--col-E2E6EB);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 20px;
+                display: inline-block;
+                margin: 0 6px;
+                filter: drop-shadow(0 3px 16px rgba(212, 144, 137, 0.55));
+            }
+
+            &:first-child{
+                margin-bottom: .85em;
+            }
+        }
+
+        &__copyright{
+            transform: rotateY(180deg);
+            display: inline-block;
+            margin-right: 4px;
+        }
+    }
 }
