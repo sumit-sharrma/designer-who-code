@@ -33,6 +33,7 @@ img {
   --text-light-grey: #5C5C5C;
   --text-medium-grey: #707070;
   --col-f0f1ff: #f0f1ff;
+  --col-F4F5F7: #F4F5F7;
   --col-25D366: #25D366;
   --primary-rgb: 246, 149, 60;
 }
@@ -121,7 +122,7 @@ body {
 }
 
 .content {
-  padding-top: 14vh;
+  padding-top: 14vh 0 16vh;
 }
 
 .hero {
@@ -302,7 +303,7 @@ body {
 }
 
 .hero__intro h1 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .hero__intro h1 span {
@@ -332,8 +333,6 @@ body {
 }
 
 .hero__wave--bg {
-  -webkit-animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-          animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   position: absolute;
@@ -387,32 +386,6 @@ body {
 
 .hero__social a:not(:last-child) {
   margin-right: 30px;
-}
-
-@-webkit-keyframes wave {
-  0% {
-    margin-left: 0;
-    margin-top: 0;
-  }
-  50% {
-  }
-  100% {
-    margin-top: 0;
-    margin-left: -800px;
-  }
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-    margin-top: 0;
-  }
-  50% {
-  }
-  100% {
-    margin-top: 0;
-    margin-left: -800px;
-  }
 }
 
 .playground__block:not(:last-child) {
@@ -510,7 +483,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2em;
+  grid-gap: 8em;
 }
 
 .card li {
@@ -544,17 +517,26 @@ body {
 .card__content h3 {
   margin-bottom: 12px;
   font-weight: 600;
-  color: var(--text-dark);
-}
-
-.card__content p {
-  color: var(--text-light-grey);
-  margin-bottom: 12px;
 }
 
 .card__content span {
   font-size: 1.4rem;
+}
+
+.card__content--dark h3 {
+  color: var(--text-dark);
+}
+
+.card__content--dark span {
   color: var(--text-light-grey);
+}
+
+.card__content--light h3 {
+  color: var(--white);
+}
+
+.card__content--light span {
+  color: var(--col-f0f1ff);
 }
 
 .card__photo img {
@@ -632,6 +614,7 @@ body {
 .about__body__block p {
   color: var(--text-light-grey);
   margin-bottom: 2em;
+  line-height: 1.4;
 }
 
 .about__body__block p a {
@@ -980,7 +963,7 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
-  margin: 40em 0 24px;
+  margin: 34em 0 10em;
 }
 
 .project__head--label {

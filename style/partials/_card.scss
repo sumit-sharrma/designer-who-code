@@ -3,7 +3,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2em;
+    grid-gap: 8em;
 
     li{
         display: flex;
@@ -37,17 +37,28 @@
         h3{
             margin-bottom: 12px;
             font-weight: $font-semi-bold;
-            color: var(--text-dark);
-        }
-
-        p{
-            color: var(--text-light-grey);
-            margin-bottom: 12px;
         }
 
         span{
             font-size: 1.4rem;
-            color: var(--text-light-grey);
+        }
+
+        &--dark{
+            h3{
+                color: var(--text-dark);
+            }
+            span{
+                color: var(--text-light-grey);
+            }
+        }
+
+        &--light{
+            h3{
+                color: var(--white);
+            }
+            span{
+                color: var(--col-f0f1ff);
+            }
         }
     }
 
