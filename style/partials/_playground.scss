@@ -32,6 +32,13 @@
                 background-color: #97FDBE;
             }
         }
+
+        &--subtext{
+            color: var(--text-light-grey);
+            margin-top: .67em;
+            margin-bottom: 2em;
+            line-height: 1.4;
+        }
     }
 
     &__css__card{

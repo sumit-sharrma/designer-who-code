@@ -419,6 +419,13 @@ body {
   background-color: #97FDBE;
 }
 
+.playground__label--subtext {
+  color: var(--text-light-grey);
+  margin-top: .67em;
+  margin-bottom: 2em;
+  line-height: 1.4;
+}
+
 .playground__css__card {
   padding-left: 0;
   display: column;
