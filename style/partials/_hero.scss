@@ -95,3 +95,15 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+    .hero{
+        grid-template-columns: repeat(6, 1fr);
+        height: 80vh;
+
+        &__intro{
+            grid-column: 1/-1;
+            margin: 0;
+        }
+    }
+}

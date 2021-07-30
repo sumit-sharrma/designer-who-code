@@ -190,3 +190,93 @@
     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
 }
+
+@media screen and (max-width: 767px){
+    .about{
+        grid-template-columns: repeat(6, 1fr);
+
+        &__head{
+            margin: 15em 0 6em;
+            grid-column: 1/-1;
+            padding: 2em;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 0;
+
+            &__content{
+                padding: 0;
+                margin-top: 3.2em;
+
+                p{
+                    font-size: 1.6rem;
+                    line-height: 1.54;
+                    color: var(--text-light-grey);
+                }
+            }
+        }
+
+        &__value{
+
+            &__list{
+                li{
+                    label{
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+
+        &__img img{
+            width: 220px;
+            height: 220px;
+        }
+
+        &__body{
+            grid-column: 1/-1;
+            padding: 0 2em;
+
+            &__block{
+                p{
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        &__fact{
+            &__link{
+                width: 100%;
+
+                span{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        &__divider{
+            margin: 6em auto;
+            grid-column: 1/-1;
+        }
+
+        &__interest{
+            &__list{
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .social{
+        &__list{
+            flex-wrap: wrap;
+
+            li{
+                &:not(:last-child){
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+}

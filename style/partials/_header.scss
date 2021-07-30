@@ -49,3 +49,18 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+    .header{
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 20px;
+
+        &__logo{
+            grid-column: 1/4;
+        }
+
+        nav{
+            grid-column: 5/7;
+        }
+    }
+}

@@ -70,3 +70,29 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+    .card{
+        grid-gap: 4em;
+        li{
+            border: 1px solid var(--col-E2E6EB);
+            padding: 8px;
+            height: 270px;
+        }
+
+        &__content{
+            top: 80%;
+            left: 8px;
+
+            h3{
+                font-size: 1.6rem;
+                margin-bottom: 6px;
+                color: var(--text-dark);
+            }
+
+            span{
+                color: var(--text-light-grey);
+            }
+        }
+    }
+}

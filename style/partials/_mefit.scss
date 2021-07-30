@@ -8,7 +8,6 @@
 
 .project{
     padding: 0;
-    padding-bottom: 130px;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -340,4 +339,94 @@
 
 .gist{
     max-width: 980px;
+}
+
+@media screen and (max-width: 767px){
+    // img{
+    //     width: 100vw;
+    //     max-width: 100vw;
+    // }
+    .project{
+        grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 0;
+
+        &__head{
+            grid-column: 1 / -1;
+            margin: 22em 0 10em;
+            padding: 0 2em;
+        }
+
+        &__hero{
+            grid-column: 1 / -1;
+            padding: 0 2em;
+        }
+
+        &__details{
+            &__list{
+                flex-wrap: wrap;
+
+                li{
+                    margin-right: 0;
+                    margin-bottom: 2.4em;
+                }
+            }
+        }
+
+        &_hero{
+            grid-column: 1 / -1;
+        }
+
+        &__content{
+            grid-column: 1 / -1;
+            padding: 0 2em;
+        }
+    }
+
+    .solution{
+        &__list{
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+
+            li{
+                width: 100%;
+                text-align: left;
+                padding: 0;
+            }
+        }
+
+        &__content{
+            flex-wrap: wrap;
+
+            &__para{
+                width: 100%;
+                padding: 20px;
+
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .list{
+        img{
+            width: 80vw;
+        }
+    }
+
+    .gist{
+        display: none;
+    }
+
+    .image{
+        &__half{
+            margin: 0;
+        }
+
+        &__grid{
+            flex-direction: column;
+        }
+    }
 }

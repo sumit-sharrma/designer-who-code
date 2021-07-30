@@ -92,3 +92,32 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+    .playground{
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 2em;
+
+        &__block{
+            grid-column: 1 / -1;
+        }
+
+        &__label{
+            h2{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+
+        &__css{
+            &__card{
+                columns: 1;
+
+                li a{
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+}

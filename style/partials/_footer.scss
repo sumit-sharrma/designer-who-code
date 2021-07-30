@@ -1,7 +1,7 @@
 .footer{
     background-color: var(--col-2B3876);
     padding: 40px 0;
-    margin-top: 150px;
+    margin-top: 10em;
 
     &__list{
         display: flex;
@@ -80,6 +80,41 @@
             transform: rotateY(180deg);
             display: inline-block;
             margin-right: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .footer{
+        grid-template-columns: repeat(6, 1fr);
+        padding: 4em 2em;
+
+        &__list{
+            flex-direction: column;
+            grid-column: 1/-1;
+
+            &__block{
+                text-align: left;
+                width: 100%;
+
+                label{
+                    margin-bottom: 0.4em;
+                }
+
+                &__items{
+                    &:not(:last-child){
+                        margin-bottom: .65em;
+                    }
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 4em;
+                }
+            }
+        }
+
+        &__bottom{
+            grid-column: 1/-1;
         }
     }
 }
