@@ -57,6 +57,14 @@
 
         &__logo{
             grid-column: 1/4;
+
+            &--letter{
+                font-size: 6.4rem;
+            }
+
+            &--word{
+                font-size: 2rem;
+            }
         }
 
         nav{
